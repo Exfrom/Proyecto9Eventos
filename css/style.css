@@ -1,16 +1,23 @@
-body{
+/* Estilos globales */
+body {
     background-color: rgb(83, 169, 226);
 }
-.titulo{
+
+/* Estilos para el título */
+.titulo {
     color: aliceblue;
-    display: flex;    
+    display: flex;
     justify-content: center;
     align-items: center;
 }
-.logofav{
+
+/* Estilos para el logotipo */
+.logofav {
     margin-inline-start: 15px;
     max-width: 5vh;
 }
+
+/* Estilos para el contenedor de eventos */
 .eventos {
     display: flex;
     justify-content: center;
@@ -18,7 +25,9 @@ body{
     padding: 10px;
     flex-direction: column;
 }
-.formulario{
+
+/* Estilos para el formulario de eventos */
+.formulario {
     width: 225px;
     background-color: aliceblue;
     padding-top: 18px;
@@ -29,28 +38,37 @@ body{
     align-items: center;
     box-shadow: 0px 0px 8px 3px rgb(255, 255, 255);
 }
-.formulario input{
-    width: 100%; /* El ancho de los input será el 100% del contenedor padre */
-    box-sizing: border-box; 
+
+/* Estilos para las entradas de texto en el formulario */
+.formulario input {
+    width: 100%;
+    box-sizing: border-box;
     margin-bottom: 5px;
     border: solid 0.2px rgb(0, 178, 255);
     border-radius: 8px;
     padding: 5px;
-
 }
-.formulario input:hover{
+
+/* Estilos al pasar el ratón sobre las entradas de texto */
+.formulario input:hover {
     background-color: antiquewhite;
 }
-#agregar{
+
+/* Estilos para el botón de agregar evento */
+#agregar {
     background-color: rgb(0, 178, 255);
     color: aliceblue;
     padding: 8px;
 }
-#agregar:hover{
+
+/* Estilos al pasar el ratón sobre el botón de agregar evento */
+#agregar:hover {
     background-color: rgb(1, 156, 222);
     color: black;
 }
-.listaEventos2{
+
+/* Estilos para la lista de eventos */
+.listaEventos2 {
     padding: 8px;
     margin-top: 20px;
     background-color: aliceblue;
@@ -58,31 +76,46 @@ body{
     width: 600px;
     box-shadow: 0px 0px 8px 3px rgb(255, 255, 255);
 }
+
+/* Oculta la lista de eventos si está vacía */
 .listaEventos2:empty {
     display: none;
 }
-.eliminar{
+
+/* Estilos para los botones de eliminar */
+.eliminar {
     background-color: rgb(255, 189, 47);
     border: none;
     padding: 10px;
     margin-right: 10px;
     border-radius: 5px;
 }
-.eliminar:hover{
+
+/* Estilos al pasar el ratón sobre los botones de eliminar */
+.eliminar:hover {
     color: aliceblue;
     background-color: red;
 }
-.evento{
+
+/* Estilos para cada evento en la lista */
+.evento {
     margin-top: 10px;
     padding: 10px;
     border: solid 2px rgb(0, 178, 255);
     margin-bottom: 20px;
     border-radius: 10px;
 }
-.evento:hover{
+
+/* Estilos al pasar el ratón sobre cada evento */
+.evento:hover {
     background-color: rgb(143, 221, 255);
 }
-.evento, .dias, .nombreEvento, .fechaEvento{
+
+/* Estilos para los elementos dentro de cada evento */
+.evento,
+.dias,
+.nombreEvento,
+.fechaEvento {
     display: flex;
     padding: 5px;
     padding-inline: 15px;
@@ -90,21 +123,30 @@ body{
     align-items: center;
     justify-content: space-between;
 }
-.nombreEvento{
+
+/* Estilos para el nombre del evento */
+.nombreEvento {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 20px;
 }
-.dias{
+
+/* Estilos para el bloque de días restantes */
+.dias {
     font-size: 80%;
     display: flex;
     flex-direction: column;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana,
+        sans-serif;
 }
-.diasFaltantes{
+
+/* Estilos para la cantidad de días restantes */
+.diasFaltantes {
     color: green;
     font-size: 35px;
 }
-footer{
+
+/* Estilos para el pie de página */
+footer {
     position: end;
     display: flex;
     justify-content: center;

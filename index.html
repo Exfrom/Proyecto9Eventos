@@ -4,31 +4,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Enlace al archivo de estilos CSS externo -->
     <link rel="stylesheet" href="./css/style.css">
     <title>Lista de Eventos</title>
 </head>
 
 <body>
+    <!-- Contenedor principal -->
     <div class="titulo">
         <h2>Proximos Eventos</h2>
         <img class="logofav" src="img/eventos.png" alt="img">
     </div>
     <div class="eventos">
+        <!-- Formulario para agregar eventos -->
         <div class="formulario">
             <form action="">
+                <!-- Entrada de texto para el nombre del evento -->
                 <input type="text" id="nombreEvento" placeholder="Nombre del evento"><br>
+                <!-- Selector de fecha para la fecha del evento -->
                 <input type="date" id="fechaEvento"><br>
+                <!-- Botón para agregar el evento -->
                 <input type="submit" id="agregar" value="Agregar Evento">
             </form>
-
         </div>
+        <!-- Lista de eventos -->
         <div class="listaEventos2" id="listaEventos"></div>
-
     </div>
+    <!-- Script JavaScript para la lógica de eventos -->
     <script src="script.js"></script>
+    <!-- Créditos del ícono -->
     <footer><a href="https://www.flaticon.es/iconos-gratis/eventos" title="eventos iconos">Eventos iconos
             creados por Vectors Tank - Flaticon</a></footer>
-
 </body>
 
 </html>
